@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Submenu */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu-content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-submenu:hover .dropdown-submenu-content {
+  display: block;
+}
+
+    </style>
+</head>
+<body>
+   <center> <div class="title-of-the-task"> <h1>Task "13"</h1></div></center>
+   <h2>Make dropdowns with nested HTML tags and CSS</h2>
+    <div class="main">
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown 1</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <div class="dropdown-submenu">
+                <a href="#">Submenu 1</a>
+                <div class="dropdown-submenu-content">
+                  <a href="#">Submenu Link 1</a>
+                  <a href="#">Submenu Link 2</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown 2</button>
+            <div class="dropdown-content">
+              <a href="#">Link 3</a>
+              <a href="#">Link 4</a>
+            </div>
+          </div>
+    </div>
+</body>
+</html>

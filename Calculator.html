@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <center> <div class="title-of-the-task"> <h1>Task "23"</h1></div></center>
+    <div class="main">
+        <h1>Make a JavaScript calculator that should answer addition, 
+            multiplication and subtraction question using JavaScript 
+            variables.
+            </h1>
+    </div>
+    <h2>JavaScript Calculator</h2>
+
+<p>Enter two numbers and select an operation:</p>
+
+<input type="number" id="num1" placeholder="Enter first number"><br><br>
+<input type="number" id="num2" placeholder="Enter second number"><br><br>
+
+<select id="operation">
+  <option value="add">Addition (+)</option>
+  <option value="subtract">Subtraction (-)</option>
+  <option value="multiply">Multiplication (*)</option>
+</select><br><br>
+
+<button onclick="calculate()">Calculate</button><br><br>
+
+<p id="result"></p>
+
+<script>
+function calculate() {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+    var operation = document.getElementById("operation").value;
+    var result;
+
+    switch(operation) {
+        case 'add':
+            result = num1 + num2;
+            break;
+        case 'subtract':
+            result = num1 - num2;
+            break;
+        case 'multiply':
+            result = num1 * num2;
+            break;
+        default:
+            result = "Invalid operation";
+    }
+
+    document.getElementById("result").innerText = "Result: " + result;
+}
+</script>
+</body>
+</html>

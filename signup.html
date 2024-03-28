@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+    /* Style for the buttons */
+    .button {
+        height: 40px;
+        width: 60px;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        background-size: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .button img{
+        height: 100%;
+        width: 100%;
+    }
+
+    </style>
+</head>
+<body>
+   <center> <div class="title-of-the-task"> <h1>Task "06" and "07"</h1></div></center>
+    <div class="main">
+        <form action="" method="POST" enctype="multipart/form-data">
+            <table height="100">
+               <tr>
+                   <td>First Name</td>
+                   <td><input type="text" size="40" type="text" placeholder="Please Insert Your First Name" name="fname" height="5" required></td>
+               </tr>
+
+               <tr>
+                   <td>Last Name</td>
+                   <td><input type="text" size="40" type="text" placeholder="Please Insert Your Last name" name="lname" required></td>
+               </tr>
+
+               <tr>
+                   <td>Email</td>
+                   <td><input type="email" size="40" type="text" placeholder="Please Insert Your email" name="email" required></td>
+               </tr>
+
+               <tr>
+                   <td>Password</td>
+                   <td><input type="password" size="40" type="password" placeholder="Please Insert strong password" name="password" required></td>
+               </tr>
+               <tr>
+                    <td>Gender</td>
+                    <td>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                    </td>
+                </tr>
+
+                   
+                    <tr>
+                        <td>Hobies</td>
+                        <td>
+                            <input type="checkbox" name="hobby1" value="cricket">Cricket
+                            <input type="checkbox" name="hobby2" value="reading">Reading
+                            <input type="checkbox" name="hobby3" value="travelig">Traveling
+                            <br>
+                            <input type="checkbox" name="hobby4" value="news">News
+                            <input type="checkbox" name="hobby5" value="New learning">New learnings
+                            <input type="checkbox" name="hobby6" value="songs">Songs
+                        </td>
+                                
+                    </tr>
+                    <tr>
+                        <td>Country</td>
+                        <td>
+                            <select name="country">
+                                <option value="pak">Pakistan</option>
+                                <option value="usa">USA</option>
+                                <option value="india">India</option>
+                                <option value="aus">Australia</option>  
+                            </select>
+                        </td>
+                    </tr>
+            <tr>
+                <td>Upload Your Image</td>
+                <td><input type="file" name="upload1"></td>
+            </tr>
+               <tr>
+                   <td>Contact Number</td>
+                   <td><input size="40" type="text" placeholder="Please Insert your contact with country code" pattern="^[0-9]{4}[0-9]{10}$" name="contact" required></td>
+               </tr>
+
+               <tr>
+                    <td>Message</td>
+                    <td><textarea  name="message" rows="10" cols="40"></textarea></td>
+               </tr>
+
+               <tr>
+                  <td><button type="reset" id="reset-btn" class="button"><img src="img/reset-removebg-preview.png" alt=""></button></td>
+
+                   <td align="center"><button type="submit" id="submit-btn" class="button"><img src="img/submit-removebg-preview.png" alt=""></button></td>
+               </tr>
+
+            </table>
+          
+            <h1 align=center>If You are already registered please Log in below</h1>
+           <br>
+           <br>
+           <br>
+           <h2  align='center'><a href='signin.html'style=text-decoration:none>Click me to Log in</a></h2>
+        
+         </form>
+
+        
+    </div>
+    </div></body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cliclEventForImagePositionChange</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+  position: relative;
+  width: 300px; /* Adjust according to your image size */
+  height: 400px; /* Adjust according to your image size */
+}
+.container img{
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.image:hover {
+  transform: translate(10px, 10px); /* Change position on hover */
+}
+
+    </style>
+</head>
+<body>
+   <center> <div class="title-of-the-task"> <h1>Task "10"</h1></div></center>
+   <h2 style="margin-left: 20%; margin-top: 5%;">When we bring the mouse on the image, the image changes its position</h2>
+    <div class="main">
+        
+        <br>
+        <div class="container">
+            <img src="img/3.jpg" alt="Original Image" class="image" id="image">
+          </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

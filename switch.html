@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <center> <div class="title-of-the-task"> <h1>Task "20"</h1></div></center>
+    <div class="main">
+        <h1>Use the switch statement to display “today is (whatever day 
+            it is)” according to the current day</h1>
+    </div>
+    <script>
+        // Get the current day
+var today = new Date().getDay();
+var dayString;
+
+// Use switch statement to display the day
+switch (today) {
+case 0:
+dayString = "Sunday";
+break;
+case 1:
+dayString = "Monday";
+break;
+case 2:
+dayString = "Tuesday";
+break;
+case 3:
+dayString = "Wednesday";
+break;
+case 4:
+dayString = "Thursday";
+break;
+case 5:
+dayString = "Friday";
+break;
+case 6:
+dayString = "Saturday";
+break;
+default:
+dayString = "Invalid Day";
+}
+
+document.write("Today is " + dayString);
+
+    </script>
+</body>
+</html>

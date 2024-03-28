@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    align-items: center;
+    background-color: rgb(201, 250, 138);
+
+}
+.logo{
+    width: 200px;
+    padding-left: 30px;
+}
+.logo img{
+    width: 100%;
+}
+.title{
+    flex: 2;
+    text-align: center;
+}
+nav{
+    text-align: center;
+
+}
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+
+}
+ a{
+    text-decoration: none ;
+    padding: 10px;
+}
+.menu-icon{
+    display: none;
+    width: 40px;
+    margin-left: 40px;
+}
+
+.tasks{
+    margin-top: 50px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.col-4{
+
+    flex-basis: 25%;
+    border: 1px solid red;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    margin: 30px;
+}
+.col-4 h1{
+    padding:10px ;
+    margin-top: 20px;
+}
+.col-4 button{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(124, 194, 182);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.col-4:hover{
+    background-color: aquamarine;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------media query for menu ---------*/
+
+@media only screen and (max-width:800px) and (min-width:200px){
+    nav ul {
+        position:absolute;
+        top: 36px;
+        left: 0;
+        background: rgb(29, 28, 28);
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        -webkit-transition: max-height 0.5s;
+        -moz-transition: max-height 0.5s;
+        -ms-transition: max-height 0.5s;
+        -o-transition: max-height 0.5s;
+}
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    nav ul li a{
+        color: #fff;
+
+    }
+    .menu-icon{
+     
+        display: block;
+        cursor: pointer;
+    }
+    .row{
+        margin-top: 85px;
+    }
+    .col-4{
+        flex-basis: 30%;
+        margin: 10px;
+        height: 200px;
+        width: 200px;
+    }
+}

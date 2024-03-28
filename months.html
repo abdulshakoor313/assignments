@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <center> <div class="title-of-the-task"> <h1>Task "21"</h1></div></center>
+    <div class="main">
+        <h1>Use of loop to display a string of all the names of months 
+            using JS functions and variables</h1>
+    </div>
+    <script>
+        // Define an array containing the names of months
+var months = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+];
+
+// Function to display all the names of months
+function displayMonths() {
+    var output = ""; // Initialize an empty string to store the output
+
+    // Loop through the months array and concatenate each month name to the output string
+    for (var i = 0; i < months.length; i++) {
+        output += months[i]; // Concatenate the current month name
+        // Add a comma and space after each month except for the last one
+        if (i < months.length - 1) {
+            output += ", ";
+        }
+    }
+
+    document.write(output); // Display the concatenated string of months
+}
+
+// Call the function to display the names of months
+displayMonths();
+
+    </script>
+</body>
+</html>
